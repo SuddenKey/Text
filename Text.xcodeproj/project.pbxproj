@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0871821D373138001D08D0 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0871811D373138001D08D0 /* FXBlurView.m */; };
+		3E0D02D81D361EBE00EBAC4D /* UINavigationController+UINavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D02D71D361EBE00EBAC4D /* UINavigationController+UINavigation.m */; };
+		3E52A2111D386D1800648730 /* QRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52A2081D386D1800648730 /* QRItem.m */; };
+		3E52A2121D386D1800648730 /* QRMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52A20A1D386D1800648730 /* QRMenu.m */; };
+		3E52A2131D386D1800648730 /* QRUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52A20C1D386D1800648730 /* QRUtil.m */; };
+		3E52A2141D386D1800648730 /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52A20E1D386D1800648730 /* QRView.m */; };
+		3E52A2151D386D1800648730 /* RichScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52A2101D386D1800648730 /* RichScanViewController.m */; };
 		3E7576991CEAFD8800452551 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7576981CEAFD8800452551 /* main.m */; };
 		3E75769C1CEAFD8800452551 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E75769B1CEAFD8800452551 /* AppDelegate.m */; };
 		3E75769F1CEAFD8800452551 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E75769E1CEAFD8800452551 /* ViewController.m */; };
@@ -17,9 +24,33 @@
 		3EC6B2421CF2EA7000568C53 /* DayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6B2411CF2EA7000568C53 /* DayTableViewCell.m */; };
 		3EC6B2451CF2EE6700568C53 /* MonthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6B2441CF2EE6700568C53 /* MonthTableViewCell.m */; };
 		3EC6B2481CF2F1A800568C53 /* model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6B2471CF2F1A800568C53 /* model.m */; };
+		3EFCD8721D347563003E8067 /* EvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCD8711D347563003E8067 /* EvaluationViewController.m */; };
+		3EFCD8751D3475D5003E8067 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCD8741D3475D5003E8067 /* TriangleView.m */; };
+		3EFCD8781D34834A003E8067 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCD8771D34834A003E8067 /* BlueView.m */; };
+		3EFCD87B1D34836A003E8067 /* YellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCD87A1D34836A003E8067 /* YellowView.m */; };
+		A016323B1D766E6F003868E5 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A016323A1D766E6F003868E5 /* FirstTableViewController.m */; };
+		A01632421D767EF0003868E5 /* ChainedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A01632411D767EF0003868E5 /* ChainedModel.m */; };
+		A01632461D76BD14003868E5 /* ReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01632451D76BD14003868E5 /* ReactiveCocoaViewController.m */; };
+		A05252081D66AC400071D195 /* NumberOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05252071D66AC400071D195 /* NumberOneViewController.m */; };
+		A052520B1D66AC4F0071D195 /* NumberTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A052520A1D66AC4F0071D195 /* NumberTwoViewController.m */; };
+		A456144ADDABB9ADD6A176D8 /* Pods_Text.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACE3070465C45117C6240E0 /* Pods_Text.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E0871801D373138001D08D0 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		3E0871811D373138001D08D0 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		3E0D02D61D361EBE00EBAC4D /* UINavigationController+UINavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+UINavigation.h"; sourceTree = "<group>"; };
+		3E0D02D71D361EBE00EBAC4D /* UINavigationController+UINavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+UINavigation.m"; sourceTree = "<group>"; };
+		3E52A2071D386D1800648730 /* QRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRItem.h; sourceTree = "<group>"; };
+		3E52A2081D386D1800648730 /* QRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRItem.m; sourceTree = "<group>"; };
+		3E52A2091D386D1800648730 /* QRMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRMenu.h; sourceTree = "<group>"; };
+		3E52A20A1D386D1800648730 /* QRMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRMenu.m; sourceTree = "<group>"; };
+		3E52A20B1D386D1800648730 /* QRUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRUtil.h; sourceTree = "<group>"; };
+		3E52A20C1D386D1800648730 /* QRUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRUtil.m; sourceTree = "<group>"; };
+		3E52A20D1D386D1800648730 /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		3E52A20E1D386D1800648730 /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		3E52A20F1D386D1800648730 /* RichScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichScanViewController.h; sourceTree = "<group>"; };
+		3E52A2101D386D1800648730 /* RichScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichScanViewController.m; sourceTree = "<group>"; };
 		3E7576941CEAFD8800452551 /* Text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Text.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7576981CEAFD8800452551 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E75769A1CEAFD8800452551 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +68,27 @@
 		3EC6B2441CF2EE6700568C53 /* MonthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthTableViewCell.m; sourceTree = "<group>"; };
 		3EC6B2461CF2F1A800568C53 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
 		3EC6B2471CF2F1A800568C53 /* model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model.m; sourceTree = "<group>"; };
+		3EFCD8701D347563003E8067 /* EvaluationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluationViewController.h; sourceTree = "<group>"; };
+		3EFCD8711D347563003E8067 /* EvaluationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluationViewController.m; sourceTree = "<group>"; };
+		3EFCD8731D3475D5003E8067 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		3EFCD8741D3475D5003E8067 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		3EFCD8761D34834A003E8067 /* BlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		3EFCD8771D34834A003E8067 /* BlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
+		3EFCD8791D34836A003E8067 /* YellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowView.h; sourceTree = "<group>"; };
+		3EFCD87A1D34836A003E8067 /* YellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowView.m; sourceTree = "<group>"; };
+		7ACE3070465C45117C6240E0 /* Pods_Text.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Text.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801271D422E127DBA2116C8C /* Pods-Text.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text.release.xcconfig"; path = "Pods/Target Support Files/Pods-Text/Pods-Text.release.xcconfig"; sourceTree = "<group>"; };
+		A01632391D766E6F003868E5 /* FirstTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		A016323A1D766E6F003868E5 /* FirstTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		A01632401D767EF0003868E5 /* ChainedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainedModel.h; sourceTree = "<group>"; };
+		A01632411D767EF0003868E5 /* ChainedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainedModel.m; sourceTree = "<group>"; };
+		A01632441D76BD14003868E5 /* ReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoaViewController.h; sourceTree = "<group>"; };
+		A01632451D76BD14003868E5 /* ReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaViewController.m; sourceTree = "<group>"; };
+		A05252061D66AC400071D195 /* NumberOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOneViewController.h; sourceTree = "<group>"; };
+		A05252071D66AC400071D195 /* NumberOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOneViewController.m; sourceTree = "<group>"; };
+		A05252091D66AC4F0071D195 /* NumberTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberTwoViewController.h; sourceTree = "<group>"; };
+		A052520A1D66AC4F0071D195 /* NumberTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberTwoViewController.m; sourceTree = "<group>"; };
+		FF53605C3890D44A30810E6C /* Pods-Text.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Text/Pods-Text.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +96,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A456144ADDABB9ADD6A176D8 /* Pods_Text.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E08717F1D373124001D08D0 /* 虚化 */ = {
+			isa = PBXGroup;
+			children = (
+				3E0871801D373138001D08D0 /* FXBlurView.h */,
+				3E0871811D373138001D08D0 /* FXBlurView.m */,
+			);
+			name = "虚化";
+			sourceTree = "<group>";
+		};
+		3E52A2061D386CF900648730 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				3E52A2071D386D1800648730 /* QRItem.h */,
+				3E52A2081D386D1800648730 /* QRItem.m */,
+				3E52A2091D386D1800648730 /* QRMenu.h */,
+				3E52A20A1D386D1800648730 /* QRMenu.m */,
+				3E52A20B1D386D1800648730 /* QRUtil.h */,
+				3E52A20C1D386D1800648730 /* QRUtil.m */,
+				3E52A20D1D386D1800648730 /* QRView.h */,
+				3E52A20E1D386D1800648730 /* QRView.m */,
+				3E52A20F1D386D1800648730 /* RichScanViewController.h */,
+				3E52A2101D386D1800648730 /* RichScanViewController.m */,
+			);
+			name = "二维码";
+			sourceTree = "<group>";
+		};
 		3E75768B1CEAFD8800452551 = {
 			isa = PBXGroup;
 			children = (
 				3E7576961CEAFD8800452551 /* Text */,
 				3E7576951CEAFD8800452551 /* Products */,
+				6B19909CEE2B825671B4293B /* Pods */,
+				87D051CF03FF0C27FB2E40E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +154,19 @@
 				3E75769B1CEAFD8800452551 /* AppDelegate.m */,
 				3E75769D1CEAFD8800452551 /* ViewController.h */,
 				3E75769E1CEAFD8800452551 /* ViewController.m */,
+				A05252061D66AC400071D195 /* NumberOneViewController.h */,
+				A05252071D66AC400071D195 /* NumberOneViewController.m */,
+				A05252091D66AC4F0071D195 /* NumberTwoViewController.h */,
+				A052520A1D66AC4F0071D195 /* NumberTwoViewController.m */,
+				A01632391D766E6F003868E5 /* FirstTableViewController.h */,
+				A016323A1D766E6F003868E5 /* FirstTableViewController.m */,
+				A01632401D767EF0003868E5 /* ChainedModel.h */,
+				A01632411D767EF0003868E5 /* ChainedModel.m */,
+				A01632441D76BD14003868E5 /* ReactiveCocoaViewController.h */,
+				A01632451D76BD14003868E5 /* ReactiveCocoaViewController.m */,
+				3E52A2061D386CF900648730 /* 二维码 */,
+				3E08717F1D373124001D08D0 /* 虚化 */,
+				3EFCD87C1D348392003E8067 /* 分析图 */,
 				3EC6B2401CF2EA7000568C53 /* DayTableViewCell.h */,
 				3EC6B2411CF2EA7000568C53 /* DayTableViewCell.m */,
 				3EC6B2431CF2EE6700568C53 /* MonthTableViewCell.h */,
@@ -97,6 +191,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3EFCD87C1D348392003E8067 /* 分析图 */ = {
+			isa = PBXGroup;
+			children = (
+				3EFCD8701D347563003E8067 /* EvaluationViewController.h */,
+				3EFCD8711D347563003E8067 /* EvaluationViewController.m */,
+				3EFCD8731D3475D5003E8067 /* TriangleView.h */,
+				3EFCD8741D3475D5003E8067 /* TriangleView.m */,
+				3EFCD8761D34834A003E8067 /* BlueView.h */,
+				3EFCD8771D34834A003E8067 /* BlueView.m */,
+				3EFCD8791D34836A003E8067 /* YellowView.h */,
+				3EFCD87A1D34836A003E8067 /* YellowView.m */,
+				3E0D02D61D361EBE00EBAC4D /* UINavigationController+UINavigation.h */,
+				3E0D02D71D361EBE00EBAC4D /* UINavigationController+UINavigation.m */,
+			);
+			name = "分析图";
+			sourceTree = "<group>";
+		};
+		6B19909CEE2B825671B4293B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF53605C3890D44A30810E6C /* Pods-Text.debug.xcconfig */,
+				801271D422E127DBA2116C8C /* Pods-Text.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87D051CF03FF0C27FB2E40E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ACE3070465C45117C6240E0 /* Pods_Text.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E7576AE1CEAFD8800452551 /* Build configuration list for PBXNativeTarget "Text" */;
 			buildPhases = (
+				81522ED793FC1E0D843E67B7 /* [CP] Check Pods Manifest.lock */,
 				3E7576901CEAFD8800452551 /* Sources */,
 				3E7576911CEAFD8800452551 /* Frameworks */,
 				3E7576921CEAFD8800452551 /* Resources */,
+				ED063EE7DBA1DCA066F0874E /* [CP] Embed Pods Frameworks */,
+				F5CB463B912A3EC8B74BC9BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +259,7 @@
 				TargetAttributes = {
 					3E7576931CEAFD8800452551 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = M92V33BUXM;
 					};
 				};
 			};
@@ -162,18 +294,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81522ED793FC1E0D843E67B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED063EE7DBA1DCA066F0874E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Text/Pods-Text-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CB463B912A3EC8B74BC9BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Text/Pods-Text-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E7576901CEAFD8800452551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01632421D767EF0003868E5 /* ChainedModel.m in Sources */,
 				3EC6B2421CF2EA7000568C53 /* DayTableViewCell.m in Sources */,
 				3E75769F1CEAFD8800452551 /* ViewController.m in Sources */,
+				A052520B1D66AC4F0071D195 /* NumberTwoViewController.m in Sources */,
+				3EFCD8781D34834A003E8067 /* BlueView.m in Sources */,
+				3E0871821D373138001D08D0 /* FXBlurView.m in Sources */,
+				A05252081D66AC400071D195 /* NumberOneViewController.m in Sources */,
+				3E52A2131D386D1800648730 /* QRUtil.m in Sources */,
 				3EC6B2481CF2F1A800568C53 /* model.m in Sources */,
 				3EC6B2451CF2EE6700568C53 /* MonthTableViewCell.m in Sources */,
+				3EFCD87B1D34836A003E8067 /* YellowView.m in Sources */,
+				3E52A2121D386D1800648730 /* QRMenu.m in Sources */,
+				3E52A2111D386D1800648730 /* QRItem.m in Sources */,
+				3E52A2141D386D1800648730 /* QRView.m in Sources */,
+				3E52A2151D386D1800648730 /* RichScanViewController.m in Sources */,
+				A016323B1D766E6F003868E5 /* FirstTableViewController.m in Sources */,
+				3EFCD8721D347563003E8067 /* EvaluationViewController.m in Sources */,
+				A01632461D76BD14003868E5 /* ReactiveCocoaViewController.m in Sources */,
+				3EFCD8751D3475D5003E8067 /* TriangleView.m in Sources */,
 				3E75769C1CEAFD8800452551 /* AppDelegate.m in Sources */,
 				3E7576A51CEAFD8800452551 /* Text.xcdatamodeld in Sources */,
 				3E7576991CEAFD8800452551 /* main.m in Sources */,
+				3E0D02D81D361EBE00EBAC4D /* UINavigationController+UINavigation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,23 +477,31 @@
 		};
 		3E7576AF1CEAFD8800452551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF53605C3890D44A30810E6C /* Pods-Text.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Text/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shenming.Text;
+				PRODUCT_BUNDLE_IDENTIFIER = www.haohao.Text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		3E7576B01CEAFD8800452551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801271D422E127DBA2116C8C /* Pods-Text.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Text/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shenming.Text;
+				PRODUCT_BUNDLE_IDENTIFIER = www.haohao.Text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Reactive Cocoa View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ReactiveCocoaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,13 +17,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7PD-VN-hZ4">
+                                <rect key="frame" x="272" y="156" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uox-RQ-9Xx"/>
+                                    <constraint firstAttribute="width" constant="97" id="dJv-ck-rwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ax9-Hx-OdA">
+                                <rect key="frame" x="31" y="214" width="542" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ax9-Hx-OdA" secondAttribute="bottom" constant="356" id="A5I-Ts-qsx"/>
+                            <constraint firstItem="ax9-Hx-OdA" firstAttribute="top" secondItem="7PD-VN-hZ4" secondAttribute="bottom" constant="28" id="Ddt-sG-v8a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ax9-Hx-OdA" secondAttribute="trailing" constant="7" id="J8s-YT-KyK"/>
+                            <constraint firstItem="7PD-VN-hZ4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="272" id="lVr-Jx-kBK"/>
+                            <constraint firstItem="ax9-Hx-OdA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="son-Mg-RZh"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FNM-TS-nKc"/>
+                    <navigationItem key="navigationItem" id="FNM-TS-nKc">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="text" destination="ax9-Hx-OdA" id="o98-Ml-iAf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="371"/>
+            <point key="canvasLocation" x="600" y="377"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fSn-HZ-G0m">
@@ -40,7 +70,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNZ-yg-7oT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="497"/>
+            <point key="canvasLocation" x="510" y="507"/>
         </scene>
     </scenes>
 </document>

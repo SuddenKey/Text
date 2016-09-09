@@ -15,6 +15,11 @@
 
 #import "ViewController.h"
 #import "DayTableViewCell.h"
+#import "NumberOneViewController.h"
+#import "NumberTwoViewController.h"
+#import "FirstTableViewController.h"
+#import "ChainedModel.h"
+
 @interface ViewController ()<UITextViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>{
     UITableView *myTableView;
     UICollectionView *view;
@@ -27,6 +32,7 @@
 }
 @property (nonatomic, strong) NSMutableDictionary *atDictory;
 @property (nonatomic, strong) NSMutableArray      *totalArray;
+@property (nonatomic, strong) NumberOneViewController *oneView;
 @end
 
 static NSString * const reuseIdentifier = @"FunctionCell";
@@ -36,21 +42,34 @@ static NSString * const reuseIdentifier2 = @"ApprovalHeadView";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    atArray = @[@"小小", @"幽鬼", @"火猫", @"远古幽魂"];
+    UISegmentedControl *segment =[[UISegmentedControl alloc] initWithItems:@[@"单任务", @"多任务"]];
+    segment.selectedSegmentIndex = 0;
+    [segment addTarget:self action:@selector(changeFormwork:) forControlEvents:UIControlEventValueChanged];
+    self.navigationItem.titleView = segment;
+    _oneView = [[NumberOneViewController alloc] init];
+    _oneView.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    _oneView.view.backgroundColor = [UIColor redColor];
+    [self addChildViewController:_oneView];
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    atTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 200)];
-    atTextView.delegate = self;
-//    atTextView.backgroundColor = [UIColor redColor];
-    //atTextView.center = self.view.center;
-    [self.view addSubview:atTextView];
+    ChainedModel *model = [ChainedModel new];
+    model.end().begin().secondBlcok(@"天气不错");
     
-    UIButton *atButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [atButton setBackgroundColor:[UIColor blackColor]];
-    atButton.frame = CGRectMake(0, CGRectGetMaxY(atTextView.frame), 100, 100);
-    [atButton addTarget:self action:@selector(addName) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:atButton];
+    
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+//    atArray = @[@"小小", @"幽鬼", @"火猫", @"远古幽魂"];
+//    
+//    self.view.backgroundColor = [UIColor whiteColor];
+//    atTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 200)];
+//    atTextView.delegate = self;
+////    atTextView.backgroundColor = [UIColor redColor];
+//    //atTextView.center = self.view.center;
+//    [self.view addSubview:atTextView];
+//    
+//    UIButton *atButton = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [atButton setBackgroundColor:[UIColor blackColor]];
+//    atButton.frame = CGRectMake(0, CGRectGetMaxY(atTextView.frame), 100, 100);
+//    [atButton addTarget:self action:@selector(addName) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:atButton];
     
 //    label = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth / 2 - 5, 0, 10, 0)];
 //    label.backgroundColor = [UIColor blackColor];
@@ -86,6 +105,16 @@ static NSString * const reuseIdentifier2 = @"ApprovalHeadView";
 //    [self.view addSubview:myTableView];
     //[self setUpSubView];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)changeFormwork:(UISegmentedControl *)segment {
+    if (segment.selectedSegmentIndex == 0) {
+
+    } else {
+        NumberTwoViewController *twoView = [[NumberTwoViewController alloc] init];
+        twoView.view.frame = CGRectMake(0,0,ScreenWidth, ScreenHeight - 104);;
+        [self addChildViewController:twoView];
+    }
 }
 
 - (void)back {
