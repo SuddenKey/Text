@@ -33,6 +33,9 @@
 		A01632461D76BD14003868E5 /* ReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01632451D76BD14003868E5 /* ReactiveCocoaViewController.m */; };
 		A05252081D66AC400071D195 /* NumberOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05252071D66AC400071D195 /* NumberOneViewController.m */; };
 		A052520B1D66AC4F0071D195 /* NumberTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A052520A1D66AC4F0071D195 /* NumberTwoViewController.m */; };
+		A0F62EE11D9A4DE200D46098 /* LocalMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F62EE01D9A4DE200D46098 /* LocalMusicViewController.m */; };
+		A0F62EE31D9A4F0400D46098 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F62EE21D9A4F0400D46098 /* AVFoundation.framework */; };
+		A0FEEBFD1D92273200FA6605 /* RecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEEBFC1D92273200FA6605 /* RecondViewController.m */; };
 		A456144ADDABB9ADD6A176D8 /* Pods_Text.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACE3070465C45117C6240E0 /* Pods_Text.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,11 @@
 		A05252071D66AC400071D195 /* NumberOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOneViewController.m; sourceTree = "<group>"; };
 		A05252091D66AC4F0071D195 /* NumberTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberTwoViewController.h; sourceTree = "<group>"; };
 		A052520A1D66AC4F0071D195 /* NumberTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberTwoViewController.m; sourceTree = "<group>"; };
+		A0F62EDF1D9A4DE200D46098 /* LocalMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalMusicViewController.h; sourceTree = "<group>"; };
+		A0F62EE01D9A4DE200D46098 /* LocalMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalMusicViewController.m; sourceTree = "<group>"; };
+		A0F62EE21D9A4F0400D46098 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A0FEEBFB1D92273200FA6605 /* RecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecondViewController.h; sourceTree = "<group>"; };
+		A0FEEBFC1D92273200FA6605 /* RecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecondViewController.m; sourceTree = "<group>"; };
 		FF53605C3890D44A30810E6C /* Pods-Text.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Text/Pods-Text.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F62EE31D9A4F0400D46098 /* AVFoundation.framework in Frameworks */,
 				A456144ADDABB9ADD6A176D8 /* Pods_Text.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +173,10 @@
 				A01632411D767EF0003868E5 /* ChainedModel.m */,
 				A01632441D76BD14003868E5 /* ReactiveCocoaViewController.h */,
 				A01632451D76BD14003868E5 /* ReactiveCocoaViewController.m */,
+				A0FEEBFB1D92273200FA6605 /* RecondViewController.h */,
+				A0FEEBFC1D92273200FA6605 /* RecondViewController.m */,
+				A0F62EDF1D9A4DE200D46098 /* LocalMusicViewController.h */,
+				A0F62EE01D9A4DE200D46098 /* LocalMusicViewController.m */,
 				3E52A2061D386CF900648730 /* 二维码 */,
 				3E08717F1D373124001D08D0 /* 虚化 */,
 				3EFCD87C1D348392003E8067 /* 分析图 */,
@@ -220,9 +233,46 @@
 		87D051CF03FF0C27FB2E40E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0012A9A1D9BAB0300C248B2 /* Frameworks */,
+				A0012A991D9BAAEE00C248B2 /* Frameworks */,
+				A0012A981D9BAAC200C248B2 /* Frameworks */,
+				A0012A971D9BAAB400C248B2 /* Frameworks */,
+				A0F62EE21D9A4F0400D46098 /* AVFoundation.framework */,
 				7ACE3070465C45117C6240E0 /* Pods_Text.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0012A971D9BAAB400C248B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = ../../Frameworks;
+			sourceTree = "<group>";
+		};
+		A0012A981D9BAAC200C248B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = ../../Frameworks;
+			sourceTree = "<group>";
+		};
+		A0012A991D9BAAEE00C248B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = ../../Frameworks;
+			sourceTree = "<group>";
+		};
+		A0012A9A1D9BAB0300C248B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = ../../Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +309,8 @@
 				TargetAttributes = {
 					3E7576931CEAFD8800452551 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = M92V33BUXM;
+						DevelopmentTeam = ZW3SA8G9ZC;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -350,6 +401,8 @@
 				A01632421D767EF0003868E5 /* ChainedModel.m in Sources */,
 				3EC6B2421CF2EA7000568C53 /* DayTableViewCell.m in Sources */,
 				3E75769F1CEAFD8800452551 /* ViewController.m in Sources */,
+				A0FEEBFD1D92273200FA6605 /* RecondViewController.m in Sources */,
+				A0F62EE11D9A4DE200D46098 /* LocalMusicViewController.m in Sources */,
 				A052520B1D66AC4F0071D195 /* NumberTwoViewController.m in Sources */,
 				3EFCD8781D34834A003E8067 /* BlueView.m in Sources */,
 				3E0871821D373138001D08D0 /* FXBlurView.m in Sources */,
@@ -484,9 +537,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Text/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.haohao.Text;
+				PRODUCT_BUNDLE_IDENTIFIER = www.haohao.Tex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -499,9 +553,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Text/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.haohao.Text;
+				PRODUCT_BUNDLE_IDENTIFIER = www.haohao.Tex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

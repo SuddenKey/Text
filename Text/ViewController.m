@@ -42,17 +42,18 @@ static NSString * const reuseIdentifier2 = @"ApprovalHeadView";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UISegmentedControl *segment =[[UISegmentedControl alloc] initWithItems:@[@"单任务", @"多任务"]];
-    segment.selectedSegmentIndex = 0;
-    [segment addTarget:self action:@selector(changeFormwork:) forControlEvents:UIControlEventValueChanged];
-    self.navigationItem.titleView = segment;
-    _oneView = [[NumberOneViewController alloc] init];
-    _oneView.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-    _oneView.view.backgroundColor = [UIColor redColor];
-    [self addChildViewController:_oneView];
     
-    ChainedModel *model = [ChainedModel new];
-    model.end().begin().secondBlcok(@"天气不错");
+//    UISegmentedControl *segment =[[UISegmentedControl alloc] initWithItems:@[@"单任务", @"多任务"]];
+//    segment.selectedSegmentIndex = 0;
+//    [segment addTarget:self action:@selector(changeFormwork:) forControlEvents:UIControlEventValueChanged];
+//    self.navigationItem.titleView = segment;
+//    _oneView = [[NumberOneViewController alloc] init];
+//    _oneView.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+//    _oneView.view.backgroundColor = [UIColor redColor];
+//    [self addChildViewController:_oneView];
+//    
+//    ChainedModel *model = [ChainedModel new];
+//    model.end(@"1").begin(@"2").secondBlcok(@"3");
     
     
 //    self.automaticallyAdjustsScrollViewInsets = NO;

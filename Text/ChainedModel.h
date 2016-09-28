@@ -10,7 +10,7 @@
 
 @class ChainedModel;
 
-typedef ChainedModel *(^ChainedModelVoidBlock)();
+typedef ChainedModel *(^ChainedModelVoidBlock)(NSString *);
 
 typedef ChainedModel *(^ChainedModelStringBlock)(NSString *);
 

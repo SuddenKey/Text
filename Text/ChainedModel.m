@@ -12,15 +12,15 @@
 
 
 - (ChainedModelVoidBlock)begin {
-    return ^ChainedModel *() {
-        NSLog(@"0000");
+    return ^ChainedModel *(NSString *astring) {
+        NSLog(@"astring = %@", astring);
         return self;
     };
 }
 
 - (ChainedModelVoidBlock)end {
-    return ^ChainedModel *() {
-        NSLog(@"ChainedModel");
+    return ^ChainedModel *(NSString *astring) {
+        NSLog(@"astring = %@", astring);
         return self;
     };
 }

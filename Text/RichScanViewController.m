@@ -28,6 +28,11 @@
 
 @property (strong, nonatomic)UIImageView *richScanImageView;
 
+//输出图片
+@property (nonatomic ,strong) AVCaptureStillImageOutput *imageOutput;
+@property (nonatomic, strong) UIButton *clickButton;
+
+
 @end
 
 @implementation RichScanViewController
@@ -42,6 +47,9 @@
     self.output = [[AVCaptureMetadataOutput alloc]init];
     [self.output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
     [self.output setRectOfInterest : CGRectMake (0.25 , 0.25 , 0.75 , 0.75)];
+    
+    self.imageOutput = [[AVCaptureStillImageOutput alloc] init];
+
     
     // Session
     self.session = [[AVCaptureSession alloc]init];
@@ -58,7 +66,6 @@
     AVCaptureConnection *outputConnection = [_output connectionWithMediaType:AVMediaTypeVideo];
     outputConnection.videoOrientation = [QRUtil videoOrientationFromCurrentDeviceOrientation];
     
-    // 条码类型
     self.output.metadataObjectTypes =@[AVMetadataObjectTypeEAN13Code,
                                            AVMetadataObjectTypeEAN8Code,
                                            AVMetadataObjectTypeCode128Code,
@@ -103,7 +110,6 @@
                                           cropRect.origin.x / screenWidth,
                                           cropRect.size.height / screenHeight,
                                           cropRect.size.width / screenWidth)];
-    
     // Do any additional setup after loading the view.
 }
 
@@ -141,6 +147,22 @@
     [self dismissViewControllerAnimated:YES completion:^{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:stringValue delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil,nil];
         [alert show];
+    }];
+}
+
+- (void)photoBtnDidClick
+{
+    AVCaptureConnection *conntion = [self.imageOutput connectionWithMediaType:AVMediaTypeVideo];
+    if (!conntion) {
+        NSLog(@"拍照失败!");
+        return;
+    }
+    [self.imageOutput captureStillImageAsynchronouslyFromConnection:conntion completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        if (imageDataSampleBuffer == nil) {
+            return ;
+        }
+        NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+//        _imageVI.image = [UIImage imageWithData:imageData];
     }];
 }
 
